@@ -14,9 +14,9 @@ st.write('''
 
 @st.cache
 def load_model():
-	model = tf.kears.models.load_model('./models/final_model.h5')
+	model = tf.keras.models.load_model('./models/final_model.h5')
 	return model
-	
+
 model = load_model()
 
 img = Image.open('./images/test.jpg')
