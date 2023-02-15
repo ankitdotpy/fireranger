@@ -12,7 +12,7 @@ st.write('''
 	#### Deep Learning model to predict wildfires from satellite images
 ''')
 
-@st.cache_data
+@st.cache_resource
 def load_model():
 	model = tf.keras.models.load_model('./models/final_model.h5')
 	return model
