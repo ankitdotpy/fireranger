@@ -3,7 +3,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='3'
 
 import io
 import numpy as np
-import tensorflow as tf
+import keras
 import streamlit as st
 from PIL import Image
 
@@ -14,7 +14,7 @@ st.write('''
 
 @st.cache_resource
 def load_model():
-	model = tf.keras.models.load_model('./models/final_model.h5')
+	model = keras.models.load_model('./models/final_model.h5')
 	return model
 
 model = load_model()
