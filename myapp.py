@@ -14,7 +14,7 @@ st.write('''
 
 @st.cache_resource
 def load_model():
-	model = keras.models.load_model('./models/final_model.h5')
+	model = keras.models.load_model('./models/final_model2.h5')
 	return model
 
 model = load_model()
